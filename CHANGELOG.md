@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/Draggable/formeo-i18n/compare/v1.2.1...v1.3.0) (2018-11-16)
+
+
+### Features
+
+* **languageFiles:** remove language list, languageFiles should return stringified languages ([f7f46bb](https://github.com/Draggable/formeo-i18n/commit/f7f46bb))
+
 ## [1.2.1](https://github.com/Draggable/formeo-i18n/compare/v1.2.0...v1.2.1) (2018-11-16)
 
 
