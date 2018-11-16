@@ -2,16 +2,16 @@
   "name": "formeo-i18n",
   "version": "1.2.1",
   "description": "Language files for Formeo",
-  "main": "dist/index.js",
+  "main": "dist/main.min.js",
   "files": [
     "dist/"
   ],
   "scripts": {
-    "lint": "eslint ./ --ext .js || true",
+    "lint": "eslint src/ --ext .js || true",
     "precommit": "lint-staged",
     "build": "webpack --production",
     "semantic-release": "semantic-release",
-    "test": "jest ./",
+    "test": "jest src/",
     "travis-deploy-once": "travis-deploy-once"
   },
   "repository": {
@@ -47,7 +47,6 @@
     "husky": "^1.1.4",
     "jest": "^23.6.0",
     "lint-staged": "^8.0.4",
-    "mi18n": "^0.4.6",
     "prettier": "^1.15.2",
     "semantic-release": "^15.12.0",
     "travis-deploy-once": "^5.0.9",
@@ -82,6 +81,10 @@
       "node": true,
       "jest/globals": true
     },
+    "parserOptions": {
+      "ecmaVersion": 9,
+      "sourceType": "module"
+    },
     "rules": {
       "prefer-const": 1,
       "quote-props": 0,
@@ -98,6 +101,11 @@
     }
   },
   "jest": {
+    "globals": {
+      "FORMEO_LANGUAGES": {
+        "en-US": "English"
+      }
+    },
     "testRegex": "./.*\\.spec\\.js$"
   },
   "release": {
