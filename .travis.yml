@@ -1,0 +1,33 @@
+dist: trusty
+stages:
+- lint
+- test
+- deploy
+language: node_js
+node_js: '10'
+cache:
+  directories:
+  - "~/.npm"
+  - node_modules
+notifications:
+  email: false
+git:
+  submodules: false
+before_install:
+- "git config --global user.name \"\U0001F916\""
+jobs:
+  include:
+  - stage: lint
+    script: yarn lint
+    skip_cleanup: true
+  - stage: deploy
+    if: branch = master
+    deploy:
+      provider: script
+      script:
+      - yarn travis-deploy-once "yarn semantic-release"
+      skip_cleanup: true
+env:
+  global:
+  - secure: AlxLe81OY4RVkLgOgrHLI7m2ExKcFBCukbgvsBgC40H2k4pmjECzhBDI4AoOhZ6QwpdUL+qGYWrMbdAvvoyEXZBADsYTGQgw8OHxcfeSqdzUhwev/H+dSEVfyYnE1yYO+Y40iBGsXrqy3/liFZUHE48DGUFvYnvdGsWZWwCoqmiDbiz5BqYTIpGJ29xxc17vxuCQY4vLJci/zdySW422pteHYMsIkhFl/yCKRt2nXnVqMAJiqir+H8Y4S9TeMih12io+MFvNGOV/jjOf4cjbVXwgXdPDGLuDYfEn6JFpe30sjVW2nDNlhccuCF1WrOaMSxJIuzOZKi8oaJjatb/qobYC239XAZYYkc9kW0/CcFnhigIU4fY/cC6aCLh5Lp3vWeWmLmWqHFFWJ9RxqkolBnvFwNN0ul+liKB4Wb/DEZykilInZZp84n0+jeRaB9FMbuUSu4UaY3mjJG/ZDS2hvT8H8+caU8PMS8r3IWVjy/Nub6fwr7/0tE6IFeJ7veZPOcTzc4zYE+SY8D2FtmznHxe3MWIqozzYUahonBj4NFKA4FbrKQJDodXkrjUCfACxLHZDYekfb++CqzQThqSeAXjHMhXTLvIHJ+S+ILKLrZ/BaW+3AMA54GdYILy8oV4lgL0yJCE8iMV2c25vGs7wudnwrizAkp50JrI+exuxObQ=
+  - secure: HovLGdshaJrfAHyr/KN8At7oKJNJGDhVZB/8s6VBD8VNJLhr1QniCYNe5PswwgkQJQpI8Qz+srEiAP0e7Q8E/nmqEoCmDgBtFyM8h23l/Q/8nfdXyV0Vym+HCZyybGF5B11Sihb0qN47EfMGQiCZ/cWjbGn7hI5dD824khiSd/fPW0ULoPFq2S4UONsxomEDjTCGJK+xuwkK+ceBO/EXRP5LF9Kbmmlu7BPbNj2HXK83CYwJV+TVUSzL9jyz954hV9upq4vBElLkaUbjw9/KFBmJ212qnrO6OehkRdDlnULkORAsMtvwyJZv7HG1Ey62hFXWhS15YkbX/No5+Xo3Y/fwjfqBF4ZFpDOzlZQg7hQ5OXIOYGKSNC8SE8+b1A9ey9lWCXElFXGaFky1Ul8YJeCy3PqmvEITt0FLw+T0IVhKMq2IGTdNGmtIMwUKtFBjK0tkbnD6G78QhiSqXZk08JG0RqdT/BgJbVjyqa8geBtrDhDu2VR7i9HEFXHvks+fqBG6T1mfpqaFblVZHJxZypqpYMEuP34Z7r00oVRE+mvqv7MXDBTS+bnDCQlbWXQhxO2BIzQu6LpVpnNGzOKkVA6fXgzxlwiESwF/jxvBaD8YN4ubulXKPW9iBIrXk4o18euB+PLehx1sBcSR55Tv776+4QcTj1T6bXtm37nAp88=
