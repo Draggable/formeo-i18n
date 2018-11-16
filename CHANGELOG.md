@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/Draggable/formeo-i18n/compare/v1.1.0...v1.2.0) (2018-11-16)
+
+
+### Features
+
+* **build:** add webpack, bundle language files ([d8778d7](https://github.com/Draggable/formeo-i18n/commit/d8778d7))
+
 # [1.1.0](https://github.com/Draggable/formeo-i18n/compare/v1.0.1...v1.1.0) (2018-11-16)
 
 
