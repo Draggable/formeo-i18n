@@ -2,7 +2,10 @@
   "name": "formeo-i18n",
   "version": "1.2.0",
   "description": "Language files for Formeo",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "lint": "eslint ./ --ext .js || true",
     "precommit": "lint-staged",
