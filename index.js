@@ -22,7 +22,12 @@ const languageFiles = fs
  */
 const languageList = Object.entries(languageFiles).map(([key, val]) => ({
   locale: key,
-  nativeName: val[key]
+  nativeName: val[key],
 }))
 
-module.exports = { languageFiles, languageList }
+const langsByLocale = Object.entries(languageFiles).reduce((acc, [key, val]) => {
+  acc[key.replace('-', '')] = val
+  return acc
+}, {})
+
+module.exports = { languageFiles, languageList, ...langsByLocale }

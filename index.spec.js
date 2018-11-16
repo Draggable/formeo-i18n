@@ -1,7 +1,6 @@
 const fs = require('fs')
-const { languageList, languageFiles } = require('./index')
-const langCount = fs.readdirSync(__dirname).filter(file => /.lang$/.test(file))
-  .length
+const { languageList, languageFiles, enUS } = require('./index')
+const langCount = fs.readdirSync(__dirname).filter(file => /.lang$/.test(file)).length
 
 describe('languageList', () => {
   it('should return an Array of language list objects', () => {
@@ -31,5 +30,14 @@ describe('languageFiles', () => {
       expect(languageFiles[lang.locale]).toHaveProperty(lang.locale)
       expect(languageFiles[lang.locale]).toHaveProperty('dir')
     })
+  })
+})
+
+describe('en-US', () => {
+  it('should be defined', () => {
+    expect(enUS).toBeDefined()
+  })
+  it("should equal languageFiles['en-US'] ", () => {
+    expect(enUS).toEqual(languageFiles['en-US'])
   })
 })
