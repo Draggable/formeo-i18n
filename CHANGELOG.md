@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Draggable/formeo-i18n/compare/v1.0.0...v1.0.1) (2018-11-16)
+
+
+### Bug Fixes
+
+* **readme:** update npm badge ([1bc2fac](https://github.com/Draggable/formeo-i18n/commit/1bc2fac))
+
 # 1.0.0 (2018-11-16)
 
 
