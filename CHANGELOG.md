@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/Draggable/formeo-i18n/compare/v1.2.0...v1.2.1) (2018-11-16)
+
+
+### Bug Fixes
+
+* **dist:** dist files should be included in npm ([deeb52b](https://github.com/Draggable/formeo-i18n/commit/deeb52b))
+
 # [1.2.0](https://github.com/Draggable/formeo-i18n/compare/v1.1.0...v1.2.0) (2018-11-16)
 
 
