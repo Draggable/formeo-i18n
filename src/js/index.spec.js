@@ -1,6 +1,8 @@
 const fs = require('fs')
+const path = require('path')
 const { languageList, languageFiles, enUS } = require('./index')
-const langCount = fs.readdirSync(__dirname).filter(file => /.lang$/.test(file)).length
+const langDir = path.resolve(__dirname, '../lang')
+const langCount = fs.readdirSync(langDir).filter(file => /.lang$/.test(file)).length
 
 describe('languageList', () => {
   it('should return an Array of language list objects', () => {

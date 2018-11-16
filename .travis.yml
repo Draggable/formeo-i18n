@@ -22,6 +22,8 @@ jobs:
     skip_cleanup: true
   - stage: deploy
     if: branch = master
+    before_deploy:
+    - yarn build
     deploy:
       provider: script
       script:
