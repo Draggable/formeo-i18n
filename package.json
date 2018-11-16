@@ -22,6 +22,10 @@
   ],
   "author": "Kevin Chappell <kevin.b.chappell@gmail.com> (https://kevin-chappell.com)",
   "license": "MIT",
+  "ignore": [
+    "**/*",
+    "node_modules"
+  ],
   "bugs": {
     "url": "https://github.com/Draggable/formeo-i18n/issues"
   },
@@ -34,16 +38,20 @@
     "eslint": "^5.9.0",
     "eslint-config-google": "^0.11.0",
     "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-jest": "^22.0.0",
     "eslint-plugin-prettier": "^3.0.0",
     "husky": "^1.1.4",
     "jest": "^23.6.0",
     "lint-staged": "^8.0.4",
     "mi18n": "^0.4.6",
     "prettier": "^1.15.2",
-    "semantic-release": "^15.12.0"
+    "semantic-release": "^15.12.0",
+    "travis-deploy-once": "^5.0.9"
   },
   "prettier": {
     "singleQuote": true,
+    "trailingComma": "es5",
+    "printWidth": 120,
     "semi": false
   },
   "lint-staged": {
@@ -54,16 +62,19 @@
   },
   "eslintConfig": {
     "plugins": [
+      "jest",
       "prettier"
     ],
     "extends": [
       "eslint:recommended",
+      "plugin:jest/recommended",
       "google",
       "prettier"
     ],
     "env": {
       "es6": true,
-      "node": true
+      "node": true,
+      "jest/globals": true
     },
     "rules": {
       "prefer-const": 1,
