@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Draggable/formeo-i18n/compare/v1.0.1...v1.1.0) (2018-11-16)
+
+
+### Features
+
+* **enUS:** add processed language files directly accessible by locale ([eddac38](https://github.com/Draggable/formeo-i18n/commit/eddac38))
+
 ## [1.0.1](https://github.com/Draggable/formeo-i18n/compare/v1.0.0...v1.0.1) (2018-11-16)
 
 
