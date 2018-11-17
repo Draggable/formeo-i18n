@@ -12,7 +12,7 @@
     "build": "webpack --production",
     "semantic-release": "semantic-release --ci --debug",
     "test": "jest src/",
-    "travis-deploy-once": "travis-deploy-once",
+    "travis-deploy-once": "travis-deploy-once --pro",
     "translate": "node tools/translate.js"
   },
   "repository": {
