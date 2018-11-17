@@ -1,3 +1,11 @@
+# [1.4.0](https://github.com/Draggable/formeo-i18n/compare/v1.3.0...v1.4.0) (2018-11-17)
+
+
+### Features
+
+* **langs:** add languages ([7eeb5ad](https://github.com/Draggable/formeo-i18n/commit/7eeb5ad))
+* **translate:** add auto translate script ([c0e6250](https://github.com/Draggable/formeo-i18n/commit/c0e6250))
+
 # [1.3.0](https://github.com/Draggable/formeo-i18n/compare/v1.2.1...v1.3.0) (2018-11-16)
 
 
