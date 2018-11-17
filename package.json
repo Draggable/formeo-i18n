@@ -10,7 +10,7 @@
     "lint": "eslint src/ --ext .js || true",
     "precommit": "lint-staged",
     "build": "webpack --production",
-    "semantic-release": "semantic-release",
+    "semantic-release": "semantic-release --ci --debug",
     "test": "jest src/",
     "travis-deploy-once": "travis-deploy-once",
     "translate": "node tools/translate.js"
