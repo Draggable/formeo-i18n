@@ -1,5 +1,7 @@
 en-US = 英语
-dir = LTR
+zh-CN = 简化字
+
+dir = ltr
 
 action.add.attrs.attr = 你想添加什么属性？
 action.add.attrs.value = 默认值
