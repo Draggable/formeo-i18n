@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/Draggable/formeo-i18n/compare/v1.4.1...v1.4.2) (2018-11-17)
+
+
+### Bug Fixes
+
+* **vars:** update encryted vars ([f02ddcc](https://github.com/Draggable/formeo-i18n/commit/f02ddcc))
+
 ## [1.4.1](https://github.com/Draggable/formeo-i18n/compare/v1.4.0...v1.4.1) (2018-11-17)
 
 
