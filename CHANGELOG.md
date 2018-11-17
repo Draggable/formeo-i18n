@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/Draggable/formeo-i18n/compare/v1.4.0...v1.4.1) (2018-11-17)
+
+
+### Bug Fixes
+
+* **package.json:** respoitory field ([fed0cb6](https://github.com/Draggable/formeo-i18n/commit/fed0cb6))
+
 # [1.4.0](https://github.com/Draggable/formeo-i18n/compare/v1.3.0...v1.4.0) (2018-11-17)
 
 
