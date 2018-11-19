@@ -2,14 +2,12 @@
   "name": "formeo-i18n",
   "version": "1.4.2",
   "description": "Language files for Formeo",
-  "main": "dist/main.min.js",
-  "files": [
-    "dist/"
-  ],
+  "main": "src/js/index.js",
   "scripts": {
     "lint": "eslint src/ --ext .js || true",
     "precommit": "lint-staged",
-    "build": "webpack --production",
+    "generate:index": "node tools/generate-index.js",
+    "build": "yarn generate:index && webpack --production",
     "semantic-release": "semantic-release --ci --debug",
     "test": "jest src/",
     "travis-deploy-once": "travis-deploy-once --pro",
@@ -37,10 +35,15 @@
   "homepage": "https://github.com/Draggable/formeo-i18n#readme",
   "dependencies": {},
   "devDependencies": {
+    "@babel/core": "*",
+    "@babel/preset-env": "*",
     "@google-cloud/translate": "^2.1.2",
     "@semantic-release/changelog": "^3.0.1",
     "@semantic-release/git": "^7.0.5",
     "@semantic-release/npm": "^5.1.1",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "*",
+    "babel-loader": "^8.0.4",
     "eslint": "^5.9.0",
     "eslint-config-google": "^0.11.0",
     "eslint-config-prettier": "^3.3.0",
@@ -56,6 +59,18 @@
     "travis-deploy-once": "^5.0.9",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "esmodules": true
+          }
+        }
+      ]
+    ]
   },
   "prettier": {
     "singleQuote": true,
@@ -105,11 +120,6 @@
     }
   },
   "jest": {
-    "globals": {
-      "FORMEO_LANGUAGES": {
-        "en-US": "English"
-      }
-    },
     "testRegex": "./.*\\.spec\\.js$"
   },
   "release": {
