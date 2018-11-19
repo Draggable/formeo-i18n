@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/Draggable/formeo-i18n/compare/v1.4.2...v2.0.0) (2018-11-19)
+
+
+### Bug Fixes
+
+* **i18n:** stringify lang files ([4f46cba](https://github.com/Draggable/formeo-i18n/commit/4f46cba))
+
+
+### BREAKING CHANGES
+
+* **i18n:** langList removed
+
 ## [1.4.2](https://github.com/Draggable/formeo-i18n/compare/v1.4.1...v1.4.2) (2018-11-17)
 
 
