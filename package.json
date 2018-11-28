@@ -2,7 +2,8 @@
   "name": "formeo-i18n",
   "version": "2.0.0",
   "description": "Language files for Formeo",
-  "main": "src/js/index.js",
+  "main": "dist/main.min.js",
+  "files": ["dist/*"],
   "scripts": {
     "lint": "eslint src/ --ext .js || true",
     "generate:index": "node tools/generate-index.js",
@@ -59,6 +60,7 @@
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2"
   },
+  "engines" : { "node" : ">=10" },
   "babel": {
     "presets": [
       [
