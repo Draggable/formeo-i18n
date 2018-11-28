@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/Draggable/formeo-i18n/compare/v2.0.0...v2.0.1) (2018-11-28)
+
+
+### Bug Fixes
+
+* **package.json:** fix main field to point to dist/main.min.js ([a91389c](https://github.com/Draggable/formeo-i18n/commit/a91389c))
+
 # [2.0.0](https://github.com/Draggable/formeo-i18n/compare/v1.4.2...v2.0.0) (2018-11-19)
 
 
