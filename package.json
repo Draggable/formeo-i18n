@@ -1,6 +1,6 @@
 {
   "name": "formeo-i18n",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Language files for Formeo",
   "main": "dist/main.min.js",
   "sideEffects": false,

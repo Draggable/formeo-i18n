@@ -1,3 +1,10 @@
+## [2.1.2](https://github.com/Draggable/formeo-i18n/compare/v2.1.1...v2.1.2) (2018-11-28)
+
+
+### Bug Fixes
+
+* **package.json:** add sideEffects false so tree shaking works in webpack ([b3c0539](https://github.com/Draggable/formeo-i18n/commit/b3c0539))
+
 ## [2.1.1](https://github.com/Draggable/formeo-i18n/compare/v2.1.0...v2.1.1) (2018-11-28)
 
 
