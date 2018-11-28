@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/Draggable/formeo-i18n/compare/v2.0.1...v2.1.0) (2018-11-28)
+
+
+### Features
+
+* **ar-TN:** Add Tunisian Arabic ([178658e](https://github.com/Draggable/formeo-i18n/commit/178658e))
+
 ## [2.0.1](https://github.com/Draggable/formeo-i18n/compare/v2.0.0...v2.0.1) (2018-11-28)
 
 
