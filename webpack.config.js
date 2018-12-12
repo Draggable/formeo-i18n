@@ -1,4 +1,5 @@
 const { resolve } = require('path')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   mode: 'production',
@@ -9,6 +10,7 @@ module.exports = {
     libraryTarget: 'commonjs2',
     path: resolve(__dirname, 'dist'),
   },
+  plugins: [new CopyWebpackPlugin([{ from: 'lang/*.lang', to: './', context: 'src/' }], { debug: 'debug' })],
   module: {
     rules: [
       {
