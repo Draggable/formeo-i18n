@@ -1,3 +1,10 @@
+## [2.1.3](https://github.com/Draggable/formeo-i18n/compare/v2.1.2...v2.1.3) (2018-12-12)
+
+
+### Bug Fixes
+
+* **lang-files:** Ensure language files are included in the /dist ([1ee910e](https://github.com/Draggable/formeo-i18n/commit/1ee910e))
+
 ## [2.1.2](https://github.com/Draggable/formeo-i18n/compare/v2.1.1...v2.1.2) (2018-11-28)
 
 
